@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    overflow: hidden;
+}
+.container {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    position: absolute;
+    color: #ff0000;
+    font-size: 3.2em;
+    font-style: bold;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+}
+
+.withComputer {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+#gameContainer {
+    margin-top: 20px;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+#playButton,
+#playComputer {
+    color: #D7EDE9;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #190482;
+    display: inline-block;
+    margin: 5px;
+}
+
+#playButton:hover,
+#playComputer:hover {
+    background-color: #7752FE;
+}
+.hidden{
+    display: none;
+}
+
+#thankYouMessage{
+    color: #D7EDE9;
+    font-size: 3em;
+    align-items: center;
+    font-style: bold;
+    justify-content: center;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #190482;
+    background-color: #F5E8C7;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #7752FE;
+    color: #190482;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #190482;
+    color: #D7EDE9;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #3700ff;
+}
+
+#goBack{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #190482;
+    color: #D7EDE9;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#goBack:hover{
+    background-color: #7752FE;
+}
+
+
+.black-text {
+    color: #D7EDE9;
+}
